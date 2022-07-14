@@ -6,8 +6,8 @@
 from time import time 
 num = int(input('Введите число от 1 до 1000000:'))
 x = time()                       #  число из библ time 
-strNum = str(num)                  # переводим в строку, чтобы убрать запятую
-strNum = strNum.replace('.','')    # убираем запятую
+strNum = str(num)                  
+strNum = strNum.replace('.','')    
 number = int(strNum)
 rnd_num = number // x 
 print(f'Результат:{rnd_num}')
