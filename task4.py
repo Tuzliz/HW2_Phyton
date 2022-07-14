@@ -2,13 +2,26 @@
 # не использовать random.randint и вообще библиотеку random
 # Можете использовать xor, биты, библиотеку time (миллисекунды или наносекунды) - для задания случайности
 
-from functools import reduce
-import operator
+# Случайное число: 
+from time import time 
+num = int(input('Введите число от 1 до 1000000:'))
+x = time()                       #  число из библ time 
+strNum = str(num)                  # переводим в строку, чтобы убрать запятую
+strNum = strNum.replace('.','')    # убираем запятую
+number = int(strNum)
+rnd_num = number // x 
+print(f'Результат:{rnd_num}')
 
-lst_1=[1,2,3]
-lst_2=['test1','test2','test3']
 
-res = reduce(operator.add, zip(lst_2,lst_1))
-print(f'Результат: {res}')
+
+
+#from functools import reduce
+#import operator
+
+#lst_1=[1,2,3]
+#lst_2=['test1','test2','test3']
+
+#res = reduce(operator.add, zip(lst_2,lst_1))
+#print(f'Результат: {res}')
 
 
