@@ -5,4 +5,4 @@ n = int(input('Введите число:'))
 lst_num = {}
 for i in range(1, n +1): 
     lst_num[i] = (1 + 1 / i) ** i
-print(lst_num)
+print(f'Резултат: {lst_num}')
