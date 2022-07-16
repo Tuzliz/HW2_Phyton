@@ -9,7 +9,7 @@ x = time()                       #  число из библ time
 strNum = str(num)                  
 strNum = strNum.replace('.','')    
 number = int(strNum)
-rnd_num = number // x 
+rnd_num = x // number
 print(f'Результат:{rnd_num}')
 
 # вариант 2: 
